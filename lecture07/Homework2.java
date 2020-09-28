@@ -21,6 +21,8 @@ public class Homework2 {
 		System.out.println("First time in minutes: " + t1);
 		System.out.println("Second time in minutes: " + t2);
 		
+		int d = (t2 - t1 + 24 * 60) % (24*60); // in minutes
+		System.out.println("Between " + time1 + "and " + time2 + "we have " + (d/60) + "hours and " + (d%60) + "minutes.");
 		
 		
 		
