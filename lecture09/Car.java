@@ -11,7 +11,11 @@ public class Car {
 	}
 	
 	public void drive(double miles) { // distanced traveled in miles
-		this.fuel = this.fuel - (miles / this.efficiency);
+		this.fuel -=  (miles / this.efficiency);
+	}
+	
+	public void addGas(double gal) {
+		this.fuel += gal;
 	}
 
 	// return amount of fuel left in the tank
@@ -21,16 +25,16 @@ public class Car {
 	
 	public static void main(String[] args) {
 		Car a = new Car(50);
-		
 		System.out.println(a);
-		//System.out.println(a.fuel);
-		System.out.println(a.getGasInTank()); // 0.0
-		System.out.println(a.efficiency); // 50
-		
+
 		a.drive(100);
 		
-		//System.out.println(a.fuel);
 		System.out.println(a.getGasInTank()); // -2.0
+		System.out.println(a.efficiency); // 50
+		
+		a.addGas(3.2); // add fuel to the Gas tank
+
+		System.out.println(a.getGasInTank()); // 1.2
 		System.out.println(a.efficiency); // 50
 	}
 
