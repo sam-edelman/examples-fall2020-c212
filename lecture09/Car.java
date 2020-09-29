@@ -10,10 +10,22 @@ public class Car {
 		this.efficiency = efficiency; 
 	}
 	
+	public void drive(double miles) { // distanced traveled in miles
+		this.fuel = this.fuel - miles/ this.efficiency;
+	}
+
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Car a = new Car(50);
+		
+		System.out.println(a);
+		System.out.println(a.fuel);
+		System.out.println(a.efficiency);
+		
+		a.drive(100);
+		
+		System.out.println(a.fuel);
+		System.out.println(a.efficiency);
 	}
 
 }
