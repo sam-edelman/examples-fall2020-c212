@@ -1,0 +1,142 @@
+Q: System.out.println("+---+\n| |\n+---+");
+1. +---+
+   |   |
+   +---+
+   
+Q: Write code to calculate the following expression with BigDecimal objects: 4.35 * 100
+2. import java.math.BigDecimal;
+    new BigDecimal("4.35").multiply(new BigDecimal("100"));
+    
+Q: Evaluate the following expressions: 
+3. 4
+
+4. -17
+
+5. 0
+
+6. 1
+
+7. 3
+
+8. -3
+
+9. 2
+
+10. 2
+
+11. 3
+
+12. 2
+
+13. 2
+
+14. 1
+
+15. true
+
+16. false
+
+17. true
+
+Q: Assuming int n = 3; evaluate the following expressions:
+18. false
+
+19. 1
+
+20. false
+
+21. true
+
+22. 4
+
+23. 4
+
+24. true
+
+25. -2
+
+Q: Evaluate the following expressions:
+26. 15
+
+27. 123
+
+28. 123
+
+29. 33
+
+30. -2
+
+31. 8
+
+32. "lant"
+
+33. 'e'
+
+34. "t"
+
+35. "ean"
+
+Q: Assuming that a has a boolean value and n is an int please simplify the following expressions:
+36. a == false
+
+37. a == false
+
+38. a == false
+
+39. n == 3
+
+40. n != 3
+
+41. n < 3 && n < 5
+
+42. n > 1 || n < 0
+
+43. true
+
+44. n == 4
+
+45. Yes, any while loop can be expressed as a for loop. To do this put the boolean condition from the while into the middle section of the for loop. i.e for (int i = 0; (while boolean condition); i++){}
+
+46. No, one can not express every while loop as a do-while loop, unless one wraps the do-while loop in a if statement. The reason is a 
+    while loop takes the condition before preforming the action, while a do-while loop does the action before checking the condition.
+
+Q: Determine the value of n at the end of the following fragments of code:
+47. 1
+
+48. 1
+
+49. 2
+
+50. 10
+
+51. In this code the first boolean expression in dr java is false becuase it is comparing two string objects, specifically their refernce and not 
+    actually the words themselves. Since it is two seperate disticnt string objects they have different refernces and thus, will result in 
+    the expression being false. The reason the code results true in the One.java class is becuase, when calling the print method it produces
+    a string, and thus the expression within the print method will determine that the strings are the same and will use the same object to print
+    it twice. This example is key to understanding the nuances of a java object and goes to show how important it is to ensure that one is using
+    the correct bollean expressions.
+
+Q: Make up an example in Java that demonstrates what is known as “the dangling else problem” using the following statement: 
+   “A student with a GPA of at least 1.5, but less than 2, is on probation. With less than 1.5, the student is failing.”
+52. if(student.gpa() >= 1.5) { 
+      if(student.gpa() < 2){
+       result = "on probation";
+      }
+      else{
+        result = "passing";
+      }
+    else{
+      result = "failing";
+        
+
+
+
+
+
+
+
+
+
+
+
+
